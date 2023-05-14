@@ -32,12 +32,22 @@ a {
 
 .footer {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 25vh;
   background-color: #0E8388;
   color: #E3FDFD;
+}
+
+.icons {
+  margin: 20px 0 0 0;
+}
+
+.icons > a > i {
+  margin: 15px;
+  font-size: 1.5rem;
 }
 
 .navbar {
