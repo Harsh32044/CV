@@ -35,6 +35,12 @@ a {
   margin: 0 1rem;
 }
 
+.skills {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
 .footer {
   margin-top: 3rem;
   display: flex;
@@ -51,9 +57,9 @@ a {
   margin: 20px 0 0 0;
 }
 
-.icons > a > i {
+.icons-fa{
   margin: 1rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #0E8388;
 }
 
