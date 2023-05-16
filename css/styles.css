@@ -18,7 +18,7 @@ body {
     width: 14rem;
   }
 
-  h1, h3 {
+  h1, h2 {
   color: #0E8388;
   }
 
@@ -29,7 +29,6 @@ body {
 
 a {
   text-decoration: none;
-  color: #E3FDFD !important;
 }
 
 .margin-16 {
@@ -37,6 +36,7 @@ a {
 }
 
 .footer {
+  margin-top: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -44,6 +44,7 @@ a {
   width: 100%;
   background-color: #0E8388;
   color: #E3FDFD;
+  height: 10rem;
 }
 
 .icons {
@@ -74,6 +75,10 @@ a {
 .navbar-list > li {
   display: inline-block;
   margin: 1.2rem;
+}
+
+.navbar-link {
+  color: #E3FDFD;
 }
 
 .title {
