@@ -23,7 +23,7 @@
     <tr>
       <td> <img src="Harsh.jpg" alt="Harsh's Facebook Profile Picture" /></td>
       <td>
-        <h1>
+        <h1 data-value="Harsh Srivastav | Aspiring Web Developer😎">
           Harsh Srivastav | Aspiring Web Developer😎
           <div class="icons">
             <a href="https://twitter.com/harshsriv7"><i class="fa-brands fa-twitter icons-fa"></i></a>
@@ -43,16 +43,23 @@
     <h2>My Skills</h2>
     <div class="skills">
       <div><i class="fa-brands fa-html5 icons-fa"></i>
-      <p>HTML</p></div>
+        <p>HTML</p>
+      </div>
       <div><i class="fa-brands fa-css3-alt icons-fa"></i>
-        <p>CSS</p></div>
+        <p>CSS</p>
+      </div>
       <div><i class="fa-brands fa-js icons-fa"></i>
-        <p>JavaScript</p></div>
+        <p>JavaScript</p>
+      </div>
       <div><i class="fa-brands fa-react icons-fa"></i>
-        <p>ReactJS</p></div>
+        <p>ReactJS</p>
+      </div>
       <div><i class="fa-brands fa-node icons-fa"></i>
-        <p>NodeJS</p></div>
-      <div><i class="fa-brands fa-java icons-fa"></i><p>Java</p></div>
+        <p>NodeJS</p>
+      </div>
+      <div><i class="fa-brands fa-java icons-fa"></i>
+        <p>Java</p>
+      </div>
     </div>
   </div>
 
@@ -105,10 +112,33 @@
   </div>
   <!-- <p>
     <a href="imageTrack.html" target="_blank"><strong>Here</strong></a> is a fun little thing I built with CSS and JS. Hope you enjoy it.
-   </p> -->
+  </p> -->
   <div class="footer">
     <span>Harsh Srivastav, Benagluru, Karnataka, IN</span>
   </div>
+  <script>
+    const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ&*^%$#@";
+
+    document.querySelector("h1").onmouseover = (event) => {
+      let iterations = 0;
+      const interval = setInterval(() => {
+        event.target.innerText = event.target.innerText
+          .split("")
+          .map((letter, index) => {
+            if (index < iterations) {
+              return event.target.dataset.value[index];
+            }
+            return letters[Math.floor(Math.random() * 33)];
+          }).join("");
+
+        if (iterations >= event.target.dataset.value.length) {
+          clearInterval(interval);
+        }
+        iterations += 1 / 3;
+
+      }, 20);
+    };
+  </script>
 </body>
 
 </html>
