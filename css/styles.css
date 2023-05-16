@@ -2,6 +2,7 @@ body {
   margin: 0;
     background-color: #E3FDFD;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1rem;
   }
 
   hr {
@@ -31,6 +32,10 @@ a {
   color: #E3FDFD !important;
 }
 
+.margin-16 {
+  margin: 0 1rem;
+}
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -40,6 +45,7 @@ a {
   height: 25vh;
   background-color: #0E8388;
   color: #E3FDFD;
+  margin: 0;
 }
 
 .icons {
@@ -47,7 +53,7 @@ a {
 }
 
 .icons > a > i {
-  margin: 15px;
+  margin: 1rem;
   font-size: 1.5rem;
 }
 
