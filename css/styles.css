@@ -13,7 +13,7 @@ body {
     width: 5%;
   }
 
-  img {
+  .profile-pic {
     border-radius: 50%;
     width: 14rem;
   }
@@ -37,9 +37,8 @@ a {
 
 .skills {
   text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
 }
 .footer {
   margin-top: 3rem;
@@ -90,4 +89,11 @@ a {
 .title {
   color: #E3FDFD;
   margin-left: 1rem;
+}
+
+.ts-logo {
+  fill: #0E8388;
+  margin: 1rem;
+  width: 1.8rem;
+  height: 2rem;
 }

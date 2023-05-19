@@ -21,7 +21,7 @@
   </nav>
   <table cellspacing="20">
     <tr>
-      <td> <img src="Harsh.jpg" alt="Harsh's Facebook Profile Picture" /></td>
+      <td> <img src="Harsh.jpg" alt="Harsh's Facebook Profile Picture" class="profile-pic"/></td>
       <td>
         <h1 data-value="Harsh Srivastav | Aspiring Web Developer😎">
           Harsh Srivastav | Aspiring Web Developer😎
@@ -59,6 +59,9 @@
       </div>
       <div><i class="fa-brands fa-java icons-fa"></i>
         <p>Java</p>
+      </div>
+      <div><img src="typescript.svg" alt="" class="ts-logo">
+        <p>TypeScript</p>
       </div>
     </div>
   </div>
@@ -131,7 +134,7 @@
             return letters[Math.floor(Math.random() * 33)];
           }).join("");
 
-        if (iterations >= event.target.dataset.value.length) {
+        if (iterations >= event.target.dataset.value) {
           clearInterval(interval);
         }
         iterations += 1 / 3;
